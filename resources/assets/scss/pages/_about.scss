@@ -1,7 +1,11 @@
 .content-area.about-page{
-  padding: 120px 0 0;
+  // padding: 120px 0 0;
   .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .box-container {
+      padding: 80px 150px;
       h1 {
         font-size: 3rem;
         text-align: center;
