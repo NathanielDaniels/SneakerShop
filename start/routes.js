@@ -18,4 +18,4 @@ const Route = use('Route')
 
 Route.get('/', 'PageController.home')
 Route.get('/about', 'PageController.about')
-Route.get('/new_arrivals', 'PageController.new_arrivals')
+Route.get('/new_arrivals', 'PageController.arrivals')

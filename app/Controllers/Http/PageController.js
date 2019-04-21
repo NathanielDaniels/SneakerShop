@@ -8,7 +8,7 @@ class PageController {
     return view.render('pages/about')
   }
   arrivals({view}) {
-    return view.render('pages/new_arrivals')
+    return view.render('pages/arrivals')
   }
 }
 
