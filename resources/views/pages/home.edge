@@ -1,7 +1,7 @@
 @layout('layouts/main')
 
 @section('title')
-Sneaker Shop | Top Kicks
+<title>Sneaker Shop | Top Kicks</title>
 @endsection
 
 @section('content')
@@ -20,6 +20,17 @@ Sneaker Shop | Top Kicks
   </section>
 @endsection
 
-@section('javascript')
-{{--  <script>alert("hello")</script>  --}}
-@endsection
+{{--  @section('javascript')
+<script>
+  const cart = document.getElementById('cart-popup');
+  const cartButton = document.querySelector('.cart-link');
+  const content = document.querySelector('.content-area')
+
+  cartButton.addEventListener('click', clickCart)
+
+  function clickCart() {
+    cart.classList.toggle('active');
+    content.classList.toggle('cart-popup-active')
+  }
+</script>
+@endsection  --}}

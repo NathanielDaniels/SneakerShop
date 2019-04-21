@@ -2,7 +2,7 @@
 @import "reset";
 @import "pages/home";
 @import "pages/about";
-@import "pages/newArrivals";
+@import "pages/new_arrivals";
 
 body {
   line-height: 1;
@@ -27,10 +27,13 @@ header {
   z-index: 10;
   .logo {
     font-weight: 700;
-    color: #484c4f;
     font-size: 2rem;
     text-transform: uppercase;
     text-shadow: 0 2px 2px grey;
+    a {
+      text-decoration: none;
+      color: #484c4f;
+    }
   }
   .menu {
     // position: relative;
@@ -77,14 +80,15 @@ header {
   transition: filter .4s ease-in-out;
   background: hsl(207, 19%, 85%);
   &.cart-popup-active {
-    filter: blur(20px);
+    filter: blur(10px);
   }
-  &.home-page {}
-  &.about-page {}
+  // &.home-page {}
+  // &.about-page {}
 }
 
 
 #cart-popup {
+  cursor: default;
   border-top: 2px solid #999;
   background: #f2f6f7;
   height: 250px;

@@ -1,6 +1,6 @@
-class Test {
-	main = () => {
-		console.log(swag);
-	};
-}
-Test.main();
+alert("working")
+
+const cart = document.getElementById('cart-popup')
+
+console.log(cart)
+
