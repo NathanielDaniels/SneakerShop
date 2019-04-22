@@ -1,0 +1,36 @@
+@layout('layouts/main')
+
+@section('title')
+<title>Sneaker Shop | Products</title>
+@endsection
+
+@section('content')
+  <section class="content-area products-page">
+    <h1 class="products-title">Products</h1>
+    <div class="products-grid">
+      <div class="grid-item item1">1.</div>
+      <div class="grid-item item2">2.</div>
+      <div class="grid-item item3">3.</div>
+      <div class="grid-item item4">4.</div>
+      <div class="grid-item item5">5.</div>
+      <div class="grid-item item6">6.</div>
+      <div class="grid-item item7">7.</div>
+      <div class="grid-item item8">8.</div>
+    </div>
+  </section>
+@endsection
+
+{{--  @section('javascript')
+<script>
+  const cart = document.getElementById('cart-popup');
+  const cartButton = document.querySelector('.cart-link');
+  const content = document.querySelector('.content-area')
+
+  cartButton.addEventListener('click', clickCart)
+
+  function clickCart() {
+    cart.classList.toggle('active');
+    content.classList.toggle('cart-popup-active')
+  }
+</script>
+@endsection  --}}
