@@ -4,21 +4,25 @@
   height: 100vh;
   cursor: default;
   h1.arrivals-title {
-    padding-top: 150px;
+    padding-top: 8rem;
     color: #484c4f;
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
     font-weight: 500;
     text-shadow: 0 2px 2px grey;
+  }
+  h2 {
+    text-align: center;
+    font-weight: 500;
   }
   .arrivals-grid {
     margin: 50px auto 0;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    top: 13rem;
+    transform: translate(-50%);
     display: grid;
     width: 60%;
     height: 300px;

@@ -6,18 +6,31 @@
 
 @section('content')
   <section class="content-area products-page">
-    <div class="filter-section">Filter</div>
-    <div class="products-grid">
-      {{ products }}
-      <div class="product-wrap">
-        <div class="product">
-          <div class="circle">
-            <img src="img/products/Adidas-Yeezy-Boost-350v2-hyperspace-lightgrey.png"/>
+    <div class="filter-section">
+      <div class="filter">
+        <input class="toggle" type="checkbox" id="gender-options" checked>
+        <label class="title" for="gener-options">Gender</label>
+        <div class="content">
+          <div class="gender">
+            <div class="option">Male</div>
+            <div class="option">Female</div>
           </div>
         </div>
-        <div class="title">Boost 350v2 LightGrey</div>
-        <div class="price">$350</div>
       </div>
+    </div>
+    <div class="products-grid">
+      @each(product in products)
+        <div class="product-wrap">
+          <div class="product">
+            <div class="circle">
+              <img src="img/products/Adidas-Yeezy-Boost-350v2-hyperspace-lightgrey.png"/>
+            </div>
+          </div>
+          <div class="title">Boost 350v2 LightGrey</div>
+          <div class="price">$350</div>
+        </div>
+      @endeach
+     
     </div>
   </section>
 @endsection
