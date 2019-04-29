@@ -9,12 +9,13 @@
     .filter {
       position: relative;
       .toggle {
-        display: none;
+        // display: none;
         &:checked {
-          background: maroon;
+          & + .title + .content {
+            max-height: 500px;
+          }
         }
       }
-
       .title, .content {
         backface-visibility: hidden;
         transform: translateZ(0);
@@ -41,32 +42,32 @@
           transform: rotate(90deg);
         }
       }
-    }
-    .content {
-      // max-height: 0;
-      overflow: hidden;
-      .gender {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        list-style: none;
-        text-align: center;
-      }
-      .option {
-        border: 1px solid #fff;
-        padding: 10px;
-        display: inline-block;
-        color: grey;
-        transition: all .2s ease-in-out;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        &:hover, &.selected {
-          background: maroon;
-          color: white;
-          font-weight: 700;
-          border: 1px solid grey;
+      .content {
+        max-height: 0;
+        overflow: hidden;
+        .gender {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+          list-style: none;
+          text-align: center;
+        }
+        .option {
+          border: 1px solid #fff;
+          padding: 10px;
+          display: inline-block;
+          color: grey;
+          transition: all .2s ease-in-out;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          &:hover, &.selected {
+            background: maroon;
+            color: white;
+            font-weight: 700;
+            border: 1px solid grey;
+          }
         }
       }
     }
