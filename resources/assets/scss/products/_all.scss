@@ -11,7 +11,7 @@
       .toggle {
         // display: none;
         &:checked {
-          & + .title + .content {
+          + .title + .content {
             max-height: 500px;
           }
         }
@@ -67,7 +67,7 @@
             color: white;
             font-weight: 700;
             border: 1px solid grey;
-          }
+          } 
         }
       }
     }
