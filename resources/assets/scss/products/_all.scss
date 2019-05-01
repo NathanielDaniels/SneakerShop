@@ -7,7 +7,7 @@
   cursor: default;
   .filter-section {
     // margin-top: 10px;
-    // overflow-y: auto;
+    overflow-y: auto;
     .filter {
       position: relative;
       margin-bottom: 1rem;
@@ -70,7 +70,7 @@
           text-align: center;
         }
         .sizes {
-          max-height: 185px;
+          max-height: 140px;
           overflow-y: scroll;
         }
         .option {
