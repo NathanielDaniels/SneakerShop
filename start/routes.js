@@ -23,5 +23,5 @@ Route.get('/products', 'ProductController.index');
 Route.get('/products/new_arrivals', 'PageController.arrivals');
 
 // User Authentication
-Route.get('/register', 'ProductController.register');
-Route.get('/login', 'ProductController.login');
+Route.get('/register', 'UserController.register');
+Route.get('/login', 'UserController.login');
