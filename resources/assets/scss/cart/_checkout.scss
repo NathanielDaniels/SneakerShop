@@ -1,12 +1,15 @@
-.content-area.about-page{
+.content-area.checkout-page{
   cursor: default;
-  // padding: 120px 0 0;
+  overflow: hidden;
+  // padding: 115px 0 0;
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     .box-container {
+      overflow-y: auto;
       padding: 80px 150px;
+      height: 100%;
       h1 {
         color: #484c4f;
         font-size: 3rem;
@@ -16,10 +19,8 @@
         font-weight: 500;
         text-shadow: 0 2px 2px grey;
       }
-      p {
+      input {
         max-width: 700px;
-        margin: 0 auto;
-        line-height: 1.5;
         font-size: 1.2rem;
         font-weight: 300;
       }
