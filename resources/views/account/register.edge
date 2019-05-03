@@ -1,15 +1,28 @@
 @layout('layouts/main')
 
 @section('title')
-<title>Sneaker Shop | About</title>
+<title>Sneaker Shop | Register</title>
 @endsection
 
 @section('content')
-  <section class="content-area about-page">
+  <section class="content-area login_register-page">
     <div class="container">
       <div class="box-container">
-        <h1>The Sneaker Shop</h1> 
-        <p>Sneaker Shop is a Full-Stack E-Commerce Project built from scratch. Lorem ipsum dolor amet copper mug hella waistcoat shaman vexillologist lo-fi normcore unicorn lomo sartorial leggings taiyaki. Taxidermy disrupt occupy vegan health goth blog swag chambray offal tilde synth. Biodiesel fingerstache intelligentsia asymmetrical, ethical keytar pop-up mustache dreamcatcher brunch street art selvage readymade jean shorts jianbing. Forage lumbersexual kitsch pabst austin. Brooklyn shoreditch four loko sriracha la croix. Shabby chic kale chips YOLO, iPhone poutine truffaut migas chicharrones tilde fam.</p>
+        {{--  <h1>The Sneaker Shop</h1>   --}}
+          <h2>Register</h2>
+          <div class="login-grid register">
+            <form action="" method="POST">
+              <input type="email" name="email" placeholder="Email"/>
+              <input type="password" name="password" placeholder="Password"/>
+              <a href="/account/forgot-password">Forgot Password?</a>
+              <button type="submit">Log In</button>
+            </form>
+            <div class="line"></div>
+            
+          </div>
+          <div class="footer">
+            Already have an Account? <a href="/login">Login</a>
+          </div>
       </div>
     </div>
   </section>

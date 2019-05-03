@@ -4,6 +4,8 @@
 @import "pages/about";
 @import "pages/arrivals";
 @import "products/all";
+@import "account/account";
+@import "account/login_register";
 
 body {
   line-height: 1;
@@ -238,3 +240,21 @@ header {
   padding: 80px 20px;
 }
 
+form {
+  button {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: 10px;
+    // background-color: blueviolet;
+    background-color: rgb(27, 108, 206);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  input[type="password"], input[type="email"], input[type="text"] {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #6c6c6c;
+  }
+}
