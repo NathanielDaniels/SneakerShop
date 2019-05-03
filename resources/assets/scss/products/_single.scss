@@ -69,6 +69,25 @@
         margin-bottom: 2rem;
       }
     }
+    .add-to-cart {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      .button-area {
+        .button {
+          letter-spacing: .2px;
+          background: #fff;
+          padding: 1rem;
+          border: 1px solid #1f1f1f;
+          display: block;
+          color: black;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          width: 100%;
+          cursor: pointer;
+        }
+      }
+    }
     .detail-section {
       padding: 0;
       // height: 100vh;
@@ -95,6 +114,7 @@
           cursor: pointer;
         }
         .title {
+          letter-spacing: .2px;
           background: #fff;
           padding: 1rem;
           border: 1px solid #1f1f1f;
@@ -115,6 +135,15 @@
           &::after {
             transform: rotate(90deg);
           }
+          &.size-title {
+            background: hsl(0, 0%, 10%);
+            color: #fff;
+            &::before, &::after {
+              content: "";
+              background-color: #fff;
+            }
+          }
+          
         }
         .content {
           max-height: 0;
@@ -128,11 +157,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            letter-spacing: .2px;
             cursor: pointer;
             &:hover, &.selected {
               background: maroon;
               color: white;
-              font-weight: 700;
+              // font-weight: 500;
               // border: 1px solid grey;
             } 
           }
@@ -147,7 +177,7 @@
             .option {
               padding: 10px 0;
               &:hover {
-                background: maroon;
+                background: hsl(0, 0%, 18%);
                 color: white;
                 font-weight: 700;
               }
