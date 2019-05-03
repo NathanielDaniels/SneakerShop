@@ -20,6 +20,7 @@ Route.get('/', 'PageController.home');
 Route.get('/about', 'PageController.about');
 
 Route.get('/products', 'ProductController.index');
+Route.get('/:brand/:subcatagory/:slug', 'ProductController.show');
 Route.get('/products/new_arrivals', 'PageController.arrivals');
 
 // User Authentication

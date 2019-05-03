@@ -1,0 +1,59 @@
+@layout('layouts/main')
+
+@section('title')
+<title>Sneaker Shop | Top Kicks</title>
+@endsection
+
+@section('content')
+  <section class="content-area product-single-page">
+    <div class="product-img">
+      <div class="product">
+        <div class="circle">
+          {{--  <img class="yeezySide"src="/img/products/Adidas-Yeezy-Boost-350v2-hyperspace-lightgrey.png"/>  --}}
+          <img class="yeezyAngled" src="/img/products/Adidas-Yeezy-Boost-350v2-lightgrey_ANGLED.png">
+        </div>
+      </div>
+      
+    </div>
+    <div class="product-detail">
+      <div class="titles">
+        <div class="brand">
+          Adidas
+        </div>
+        <div class="product">
+          Yeezy Boost 350v2 “Hyperspace”
+        </div>
+      </div>
+      <div class="details">
+        <p>The adidas Yeezy Boost 350 v2 “Hyperspace” is a special regional release of the popular Kanye West sneaker that released in early 2019. Available exclusively to markets in Asia, the Middle East and Africa, the colorway is the second edition of the Yeezy Boost 350 v2 to features translucent side stripes. The “Hyperspace” Yeezy features a light grey Primeknit upper with translucent stripes in a tan tint. A translucent gum rubber outsole contrasts with the translucent white midsole. The adidas Yeezy Boost 350 v2 “Hyperspace” released on March 16, 2019.</p>
+        <div class="filter-section">
+          <div class="filter">
+            <input class="toggle" type="checkbox" id="brand-options" />
+            <label class="title" for="brand-options">Brand</label>
+            <div class="content">
+              <div class="brands">
+                <p class="option">Adidas</p>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+@endsection
+
+{{--  @section('javascript')
+<script>
+  const cart = document.getElementById('cart-popup');
+  const cartButton = document.querySelector('.cart-link');
+  const content = document.querySelector('.content-area')
+
+  cartButton.addEventListener('click', clickCart)
+
+  function clickCart() {
+    cart.classList.toggle('active');
+    content.classList.toggle('cart-popup-active')
+  }
+</script>
+@endsection  --}}
