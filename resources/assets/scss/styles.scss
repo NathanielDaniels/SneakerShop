@@ -140,6 +140,7 @@ header {
     overflow-y: hidden;
     white-space: nowrap;
     // margin-top: 20px;
+    
     .item-container {
       width: 200px;
       display: inline-block;
@@ -152,6 +153,11 @@ header {
       flex-direction: column;
       position: relative;
       padding: 70px 20px;
+      cursor: pointer;
+      &:hover .circle{
+          background: hsla(0, 100%, 35%, .7);
+          color: white;
+        }
       img {
         position: absolute;
         left: -30px;
@@ -177,10 +183,6 @@ header {
         align-items: center;
         border-radius: 50%;
         transition: all .3s ease-in-out;
-        &:hover {
-          background: hsla(0, 100%, 35%, .7);
-          color: white;
-        }
       }
     }
   }
