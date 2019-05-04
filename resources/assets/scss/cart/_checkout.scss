@@ -54,7 +54,9 @@
           margin-top: 20px;
           .total-items {
             position: sticky;
-            top: 0;
+            top: 50%;
+            transform: translate(0 ,-50%);
+            // top: 0;
             .items, .tax, .shipping, .price {
               margin: 0 0 1.3rem;
               text-transform: capitalize;
