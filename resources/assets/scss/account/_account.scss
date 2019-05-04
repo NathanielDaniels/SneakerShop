@@ -1,0 +1,28 @@
+.content-area.about-page{
+  cursor: default;
+  // padding: 120px 0 0;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box-container {
+      padding: 80px 150px;
+      h1 {
+        color: #484c4f;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-shadow: 0 2px 2px grey;
+      }
+      p {
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
