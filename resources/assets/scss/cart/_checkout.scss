@@ -21,7 +21,7 @@
       }
       .checkout-grid {
         display: grid;
-        grid-template-columns: 70% 1fr;
+        grid-template-columns: 70% 2px 1fr;
         grid-gap: 20px;
         .forms {
           h3 {
@@ -43,7 +43,13 @@
             // font-weight: 300;
           }
         }
+        .line {
+          width: 2px;
+          height: 100%;
+          background: #e5e5e5;
+        }
         .totals {
+          margin-top: 20px;
           .total-items {
             position: sticky;
             top: 0;
@@ -54,6 +60,7 @@
               font-size: 1.5rem;
               span {
                 font-weight: 700;
+                margin-right: 10px;
               }
             }
           }
