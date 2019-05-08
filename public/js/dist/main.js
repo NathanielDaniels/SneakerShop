@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./resources/assets/js/main.js");
 })({
     "./resources/assets/js/main.js": function(module, exports) {
-        eval("class Test {\n  constructor() {\n    this.main = () => {\n      console.log(swag);\n    };\n  }\n\n}\n\nTest.main();\n\n//# sourceURL=webpack:///./resources/assets/js/main.js?");
+        eval("alert('working');\nconst cart = document.getElementById('cart-popup');\nconsole.log(cart);\n\n//# sourceURL=webpack:///./resources/assets/js/main.js?");
     }
 });
