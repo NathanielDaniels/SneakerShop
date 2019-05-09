@@ -16,7 +16,7 @@ compress.unused = true;
 module.exports = env => {
 	return {
 		entry: {
-			CartBtn: '.resources/assets/js/CartBtn.js',
+			CartBtn: './resources/assets/js/CartBtn.js',
 			FirstComp: './resources/assets/js/FirstComp.js',
 			main: './resources/assets/js/main.js'
 		},
