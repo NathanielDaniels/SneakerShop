@@ -21,7 +21,7 @@ gulp.task('default', ['webpack', 'styles', 'browser-sync'], () => {
 
 gulp.task('watch-proxy', ['webpack', 'styles', 'browser-sync-proxy'], () => {
 	gulp.watch('./resources/assets/scss/**/*', ['styles']);
-	// gulp.watch('./resources/assets/js/**/*', ['webpack']);
+	gulp.watch('./resources/assets/js/**/*', ['webpack']);
 	gulp
 		.watch([
 			'./public/**/*',
@@ -29,6 +29,7 @@ gulp.task('watch-proxy', ['webpack', 'styles', 'browser-sync-proxy'], () => {
 			'./resources/views/**/*',
 			'!public/js/**/.#*js',
 			'!public/css/**/.#*css'
+			// './ resources/assets/js/**/*'
 		])
 		.on('change', reload);
 });

@@ -17,7 +17,7 @@ module.exports = env => {
 	return {
 		entry: {
 			CartBtn: '.resources/assets/js/CartBtn.js',
-			// FirstComp: './resources/assets/js/FirstComp.js',
+			FirstComp: './resources/assets/js/FirstComp.js',
 			main: './resources/assets/js/main.js'
 		},
 		output: {
