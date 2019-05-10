@@ -21,6 +21,6 @@ class Layout extends Component {
 	}
 }
 
-const cartBtn = document.getElementById('cart-btn');
+const cartBtn = document.getElementById('cartBtn');
 
 ReactDOM.render(<Layout />, cartBtn);
