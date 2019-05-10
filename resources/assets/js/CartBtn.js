@@ -12,11 +12,9 @@ class Layout extends Component {
 	async test() {}
 	render() {
 		return (
-			<React.Fragment>
-				<a href="#" class="cart-link">
-					Cart<span class="cart-link__number">4</span>
-				</a>
-			</React.Fragment>
+			<a href="#" class="cart-link">
+				Cart<span class="cart-link__number">4</span>
+			</a>
 		);
 	}
 }
