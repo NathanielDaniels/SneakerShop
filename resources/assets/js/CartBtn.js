@@ -12,13 +12,15 @@ class Layout extends Component {
 	async test() {}
 	render() {
 		return (
-			<a href="#" class="cart-link">
-				Cart<span class="cart-link__number">4</span>
-			</a>
+			<React.Fragment>
+				<a href="#" class="cart-link">
+					Cart<span class="cart-link__number">4</span>
+				</a>
+			</React.Fragment>
 		);
 	}
 }
 
-const app = document.getElementById('app');
+const cartBtn = document.getElementById('cart-btn');
 
-ReactDOM.render(<Layout />, app);
+ReactDOM.render(<Layout />, cartBtn);
