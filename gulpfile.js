@@ -29,7 +29,7 @@ gulp.task('watch-proxy', ['webpack', 'styles', 'browser-sync-proxy'], () => {
 			'./resources/views/**/*',
 			'!public/js/**/.#*js',
 			'!public/css/**/.#*css'
-			// './ resources/assets/js/**/*'
+			// './resources/assets/js/**/*'
 		])
 		.on('change', reload);
 });
