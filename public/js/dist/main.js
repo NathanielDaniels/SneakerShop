@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./resources/assets/js/main.js");
 })({
     "./resources/assets/js/main.js": function(module, exports) {
-        eval("const cart = document.getElementById('cart-popup');\nconsole.log(cart);\n\n//# sourceURL=webpack:///./resources/assets/js/main.js?");
+        eval("// const cart = document.getElementById('cart-popup');\n// console.log(cart);\n\n//# sourceURL=webpack:///./resources/assets/js/main.js?");
     }
 });

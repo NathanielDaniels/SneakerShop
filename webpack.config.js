@@ -17,6 +17,7 @@ module.exports = env => {
 	return {
 		entry: {
 			CartBtn: './resources/assets/js/CartBtn.js',
+			CartPopup: './resources/assets/js/CartPopup.js',
 			// FirstComp: './resources/assets/js/FirstComp.js',
 			main: './resources/assets/js/main.js'
 		},
@@ -59,8 +60,13 @@ module.exports = env => {
 		],
 		optimization: {
 			splitChunks: {
-				chunks: 'all',
-				minSize: 0
+				cacheGroups: {
+					vendor: {
+						test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+						name: 'vendors',
+						chunks: 'all'
+					}
+				}
 			},
 			minimize: true,
 			minimizer: [

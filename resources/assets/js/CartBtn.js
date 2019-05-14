@@ -12,8 +12,8 @@ class CartBtn extends Component {
 	async test() {}
 	render() {
 		return (
-			<a href="#" class="cart-link">
-				Cart<span class="cart-link__number">4</span>
+			<a href="#" className="cart-link">
+				Cart<span className="cart-link__number">4</span>
 			</a>
 		);
 	}

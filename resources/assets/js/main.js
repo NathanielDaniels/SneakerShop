@@ -1,3 +1,3 @@
-const cart = document.getElementById('cart-popup');
+// const cart = document.getElementById('cart-popup');
 
-console.log(cart);
+// console.log(cart);
