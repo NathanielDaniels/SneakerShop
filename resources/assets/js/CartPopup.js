@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
-class CartPopup extends Component {
+export default class CartPopup extends Component {
 	constructor() {
 		super();
 		this.state = {
@@ -72,7 +71,3 @@ class CartPopup extends Component {
 		);
 	}
 }
-
-const CartPopupRoot = document.getElementById('CartPopupRoot');
-
-ReactDOM.render(<CartPopup />, CartPopupRoot);
